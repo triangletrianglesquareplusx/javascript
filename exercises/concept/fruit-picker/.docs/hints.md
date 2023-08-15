@@ -6,27 +6,28 @@
 - Callback functions must meet the specification of the calling function.
 
 
-## 1. Try to notify with a successful message
+## 1. Notify with a successful message
 
 - Use the imported API function `notify` in your function.
-- Pass an object to `notify`. It should expect to receive an object with a property of `message`. Think about what the message property should be.
-- Return the result from the `notify` API function.
+- Pass an object to `notify`. It should have a property of `message`. Think about what the message value should be.
+- Pay attention to the JSDoc type hint -- the function should not return a value.
 
-## 2. Try to notify with an error message
+## 2. Notify with an error message
 
 - Use the imported API function `notify` in your function.
-- Pass another object to `notify`. It should expect to receive an object with a property of `message` like the previous task but with a different value. 
-- Return the result from the `notify` API function.
+- Pass another object to `notify`. It should have a property of `message`. The message value should differ from the last part. 
+- Pay attention to the comments [JSDoc] above the function definition: - The function should not return a value.
 
-## 3. Create a callback to buy fruit if the inventory is available
+## 3. Place an order to buy fruit
 
 - Use the already imported `order` function. 
-- Since we are working on a wrapper think about whether we really need to return anything this time.
-- Cover both the chance of a successful outcome and a failed one by including the two callback functions. 
+- Pay attention to the JSDoc type hints -- the function should receive 3 arguments and not return a value.
+- Reuse the previously created callbacks as arguments to the order function. 
 
-## 4. Refactor your awesome work so far into a more concise function
+## 4. Refactor your work into a more concise function
 
-- Reuse the function from the previous task.
-- Try to think of a way to package variety and quantity together when they are passed to `orderFromGrocer`.
+- Reuse the functions from the previous tasks.
+- Pay attention to the JSDoc type hints -- the function should receive 2 arguments and not return a value.
+- Combine the arguments into an object representing the query to the grocer to place an order.
 
 
